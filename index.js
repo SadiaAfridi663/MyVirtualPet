@@ -26,4 +26,17 @@ function Pet(name, type, age, happiness, hunger) {
         }
     }
    
+    this.play = function () {
+        if (this.petHappiness >= 100) {
+            this.petHappiness = 100
+            alert("Your pet is feeling great")
+        }else if(this.petHunger === 95){
+            this.petHappiness += 5
+            alert(`You've played with your pet. Happiness level: ${this.petHappiness} `)
+        }
+        else {
+            this.petHappiness += 10
+            alert(`Your pet's happiness has increased to: ${this.petHappiness}. Keep playing for more fun!} `)
+        }
+    }
 }
