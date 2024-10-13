@@ -39,7 +39,6 @@ function Pet(name, type, age, happiness, hunger) {
     }
 }
 
-
 var petNameInput = prompt("Give your pet a name")
 var petTypeInput = prompt("What kind of pet is it? (e.g., 'dog', 'cat', 'dragon').")
 var petAgeInput = +prompt("How old is your pet?")
@@ -74,7 +73,7 @@ while (action !== 4) {
             myPet.agePet()
             break;
         case 4:
-            alert(`${this.petName} had a great time with you! See you next time!`)
+            alert(`${myPet.petName} had a great time with you! See you next time!`)
             break;
         default:
             alert("Invalid choice. Please select 1, 2, 3, or 4.")
