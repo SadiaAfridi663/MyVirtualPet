@@ -40,3 +40,11 @@ function Pet(name, type, age, happiness, hunger) {
         }
     }
 }
+var petNameInput = prompt("Give your pet a name")
+var petTypeInput = prompt("What kind of pet is it? (e.g., 'dog', 'cat', 'dragon').")
+var petAgeInput = +prompt("How old is your pet?")
+var petHappinessInput = +prompt("How happy is your pet? (a number between 0 and 100)")
+var petHungerInput = +prompt("How hungry is your pet? (a number between 0 and 100)")
+
+var myPet = new Pet(petNameInput, petTypeInput, petAgeInput, petHappinessInput, petHungerInput)
+// console.log(`petName:${myPet.petName}, petType: ${myPet.petType},  petAge:,  petType: ${myPet.petType} ${myPet.petAge},  petHappiness: ${myPet.petHappiness},  petHunger: ${myPet.petHunger} `)
