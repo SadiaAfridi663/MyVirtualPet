@@ -11,7 +11,6 @@ function Pet(name, type, age, happiness, hunger) {
         this.petHunger += 10
         alert(`${this.petName} aged up! Age: ${this.petAge}, Hunger: ${this.petHunger}, Happiness: ${this.petHappiness}.\nDon't forget to feed and play`)
     }
-
     this.feed = function () {
         if (this.petHunger <= 0) {
             this.petHunger = 0
@@ -25,7 +24,6 @@ function Pet(name, type, age, happiness, hunger) {
             alert(`You've fed your pet. Hunger level: ${this.petHunger} `)
         }
     }
-   
     this.play = function () {
         if (this.petHappiness >= 100) {
             this.petHappiness = 100
@@ -40,6 +38,8 @@ function Pet(name, type, age, happiness, hunger) {
         }
     }
 }
+
+
 var petNameInput = prompt("Give your pet a name")
 var petTypeInput = prompt("What kind of pet is it? (e.g., 'dog', 'cat', 'dragon').")
 var petAgeInput = +prompt("How old is your pet?")
@@ -47,7 +47,7 @@ var petHappinessInput = +prompt("How happy is your pet? (a number between 0 and 
 var petHungerInput = +prompt("How hungry is your pet? (a number between 0 and 100)")
 
 var myPet = new Pet(petNameInput, petTypeInput, petAgeInput, petHappinessInput, petHungerInput)
-// console.log(`petName:${myPet.petName}, petType: ${myPet.petType},  petAge:,  petType: ${myPet.petType} ${myPet.petAge},  petHappiness: ${myPet.petHappiness},  petHunger: ${myPet.petHunger} `)
+console.log(`petName:${myPet.petName}, petType: ${myPet.petType},  petAge:,  petType: ${myPet.petType} ${myPet.petAge},  petHappiness: ${myPet.petHappiness},  petHunger: ${myPet.petHunger} `)
 
 var action = 0; 
 while (action !== 4) {
@@ -80,4 +80,3 @@ while (action !== 4) {
             alert("Invalid choice. Please select 1, 2, 3, or 4.")
     }
 }
-
