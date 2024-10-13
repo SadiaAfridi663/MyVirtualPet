@@ -48,3 +48,36 @@ var petHungerInput = +prompt("How hungry is your pet? (a number between 0 and 10
 
 var myPet = new Pet(petNameInput, petTypeInput, petAgeInput, petHappinessInput, petHungerInput)
 // console.log(`petName:${myPet.petName}, petType: ${myPet.petType},  petAge:,  petType: ${myPet.petType} ${myPet.petAge},  petHappiness: ${myPet.petHappiness},  petHunger: ${myPet.petHunger} `)
+
+var action = 0; 
+while (action !== 4) {
+
+    var action = +prompt(
+        `what would you like to do with ${myPet.petName}? \n 
+    1. Feed your pet \n
+    2. Play with your pet \n
+    3. Age your pet \n
+    4. Quit
+    `)
+    switch (action) {
+        case 1:
+            myPet.feed()
+            break;
+
+        case 1:
+            myPet.feed()
+            break;
+        case 2:
+            myPet.play()
+            break;
+        case 3:
+            myPet.agePet()
+            break;
+        case 4:
+            alert(`${this.petName} had a great time with you! See you next time!`)
+            break;
+        default:
+            alert("Invalid choice. Please select 1, 2, 3, or 4.")
+    }
+}
+
